@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir -p hdl_checker
+rm -r hdl_checker/
+
 mkdir -p build
 cd ./build
 rm ./*
