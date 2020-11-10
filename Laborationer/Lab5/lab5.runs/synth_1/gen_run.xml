@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1576138148">
+  <File Type="RDS-PROPCONSTRS" Name="mcu_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="mcu.tcl"/>
+  <File Type="RDS-RDS" Name="mcu.vds"/>
+  <File Type="RDS-UTIL" Name="mcu_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mcu_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mcu.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mcu_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mcu_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/komponenter/SR4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/komponenter/SR4.vhd"/>
+        <Attr Name="ImportTime" Val="1479110907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/komponenter/MUX2x8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/komponenter/MUX2x8.vhd"/>
+        <Attr Name="ImportTime" Val="1479110901"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/cpu_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/cpu_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1479110850"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/komponenter/REG8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/komponenter/REG8.vhd"/>
+        <Attr Name="ImportTime" Val="1479110890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/labbfiler/stack.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/stack.vhd"/>
+        <Attr Name="ImportTime" Val="1479111970"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/registerblock.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/registerblock.vhd"/>
+        <Attr Name="ImportTime" Val="1479110869"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/komponenter/REG6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/komponenter/REG6.vhd"/>
+        <Attr Name="ImportTime" Val="1479110893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/komponenter/MUX3x6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/komponenter/MUX3x6.vhd"/>
+        <Attr Name="ImportTime" Val="1479110898"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/komponenter/ALU8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/komponenter/ALU8.vhd"/>
+        <Attr Name="ImportTime" Val="1479110904"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/misc/sub10.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/sub10.vhd"/>
+        <Attr Name="ImportTime" Val="1479110926"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/misc/edge_det.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/edge_det.vhd"/>
+        <Attr Name="ImportTime" Val="1479110935"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/misc/clk_divider.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/clk_divider.vhd"/>
+        <Attr Name="ImportTime" Val="1479137408"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/instruktionsavkodare.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/instruktionsavkodare.vhd"/>
+        <Attr Name="ImportTime" Val="1479110842"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/berakningsenhet.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/berakningsenhet.vhd"/>
+        <Attr Name="ImportTime" Val="1479110857"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/labbfiler/adressvaljare.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/adressvaljare.vhd"/>
+        <Attr Name="ImportTime" Val="1479113071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/misc/nbcd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/nbcd.vhd"/>
+        <Attr Name="ImportTime" Val="1479135946"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/misc/BCD_driver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/BCD_driver.vhd"/>
+        <Attr Name="ImportTime" Val="1479110923"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/misc/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1479137495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/minne.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/minne.vhd"/>
+        <Attr Name="ImportTime" Val="1479110873"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/IOblock.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/IOblock.vhd"/>
+        <Attr Name="ImportTime" Val="1479110824"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/debugmodul.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/debugmodul.vhd"/>
+        <Attr Name="ImportTime" Val="1479110846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/labbfiler/cpu.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/cpu.vhd"/>
+        <Attr Name="ImportTime" Val="1479120039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/misc/reset_block.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/reset_block.vhd"/>
+        <Attr Name="ImportTime" Val="1479133657"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/klockblock.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/klockblock.vhd"/>
+        <Attr Name="ImportTime" Val="1479137517"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LabMCU_16_17/labbfiler/mcu.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/labbfiler/mcu.vhd"/>
+        <Attr Name="ImportTime" Val="1479110875"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mcu"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/misc/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Kurser/EIT020_Digitalteknik/Laborationer/Labfiler/LabMCU_16_17/misc/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1467715939"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

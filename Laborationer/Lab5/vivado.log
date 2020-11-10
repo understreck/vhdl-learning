@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Dec 12 09:08:36 2019
+# Process ID: 976
+# Current directory: S:/Courses/eit/EITA15/Laborationer/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8452 S:\Courses\eit\EITA15\Laborationer\Lab5\lab5.xpr
+# Log file: S:/Courses/eit/EITA15/Laborationer/Lab5/vivado.log
+# Journal file: S:/Courses/eit/EITA15/Laborationer/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/Courses/eit/EITA15/Laborationer/Lab5/lab5.xpr
+INFO: [Project 1-313] Project file moved from 'I:/eit/EITA15/Laborationer/Lab 5' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'S:/Courses/eit/EITA15/Laborationer/Lab5/labMCU.ip_user_files', nor could it be found using path 'I:/eit/EITA15/Laborationer/Lab 5/labMCU.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 831.957 ; gain = 160.305
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 12 09:09:10 2019] Launched synth_1...
+Run output will be captured here: S:/Courses/eit/EITA15/Laborationer/Lab5/lab5.runs/synth_1/runme.log
+[Thu Dec 12 09:09:10 2019] Launched impl_1...
+Run output will be captured here: S:/Courses/eit/EITA15/Laborationer/Lab5/lab5.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 09:19:52 2019...
