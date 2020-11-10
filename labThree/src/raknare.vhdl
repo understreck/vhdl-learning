@@ -41,6 +41,5 @@ entity raknare is
 end raknare;
 
 architecture Behavioral of raknare is
-Fyll i vad som behövs
-
+begin
 end Behavioral;

@@ -40,7 +40,5 @@ entity mealy_lejon is
 end mealy_lejon;
 
 architecture Behavioral of mealy_lejon is
-
-Fyll i vad som behövs!!
-  
+begin
 end architecture;
