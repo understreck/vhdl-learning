@@ -2,5 +2,5 @@
 
 cd build
 
-sed -i 's/^\(GHDLFLAGS=\).*/\1'"$@/" Makefile
+sed -i 's/^\(GHDLFLAGS=.*\).*/\1'" $@/" Makefile
 make

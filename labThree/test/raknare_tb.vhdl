@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 -- entity declaration for your testbench.Dont declare any ports here
 ENTITY raknare_tb IS 
@@ -14,7 +14,7 @@ ARCHITECTURE behavior OF raknare_tb IS
          clk : IN  std_logic;
          nrst : IN  std_logic;
          cout : OUT  std_logic_vector(3 downto 0);
-		 ud   : in std_logic_vector(1 downto 0)  
+         ud   : in std_logic_vector(1 downto 0)  
         );
     END COMPONENT;
    --declare inputs and initialize them
@@ -31,7 +31,7 @@ BEGIN
           clk => clk,
           cout => cout,
           nrst => nrst,
-		  ud => ud
+          ud => ud
         );       
  -- Clock process definitions( clock with 50% duty cycle is generated here.
   clk_process :process
@@ -44,13 +44,17 @@ BEGIN
 
    stim_proc: process
           begin 
-          nrst <= '1';
+              nrst <= '1';
+              ud <="-1";
           wait for 2 ns;
-              nrst <= '0';       -- exempel på stimulering 
-               wait for 2 ns;
               ud <="11";
-               wait for 20 ns;
-               Fyll i vad som behövs!
-         end process;
-
+          wait for 2 ns;
+              ud <="01";
+          wait for 2 ns;
+              ud <="01";
+              nrst <= '0';
+          wait for 2 ns;
+              nrst <= '1';
+              ud <="11";
+   end process;
 END;

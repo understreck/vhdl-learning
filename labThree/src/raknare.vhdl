@@ -21,7 +21,6 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all;
 use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
@@ -41,5 +40,22 @@ entity raknare is
 end raknare;
 
 architecture Behavioral of raknare is
+    signal count : unsigned(3 downto 0) := X"0";
 begin
+    cout <= std_logic_vector(count);
+
+    sync : process(clk, nrst)
+    begin
+        if nrst = '0' then
+            count <= X"0";
+        elsif rising_edge(clk) then
+            if ud = "11" then
+                count <= count + 1;
+
+            elsif ud = "01" then
+                count <= count - 1;
+            end if;
+        end if;
+    end process sync;
+
 end Behavioral;

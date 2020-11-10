@@ -40,5 +40,48 @@ entity mealy_lejon is
 end mealy_lejon;
 
 architecture Behavioral of mealy_lejon is
+    type State_t is (looping, middle);
+    signal state, nextState : State_t := looping;
+
+    signal gate : std_logic_vector(1 downto 0);
+
+    constant increment  : std_logic_vector(1 downto 0) := "11";
+    constant decrement  : std_logic_vector(1 downto 0) := "01";
+    constant dontCare   : std_logic_vector(1 downto 0) := "-0";
 begin
+
+    gate(1) <= g1;
+    gate(0) <= g2;
+
+    state <= nextState;
+
+    output_p : process(clk)
+    begin
+
+        if rising_edge(clk) then
+            if state = looping then
+                ud <= dontCare;
+            elsif state = middle then
+                ud <=
+                    increment when gate = "01" else
+                    decrement when gate = "10" else
+                    dontCare;
+            end if;
+        end if;
+
+    end process output_p;
+
+    state_p : process(clk, nrst)
+    begin
+
+        if nrst = '0' then
+            nextState <= looping;
+        elsif rising_edge(clk) then
+            nextState <=
+                middle when gate = "11" else
+                looping;
+        end if;
+
+    end process state_p;
+
 end architecture;

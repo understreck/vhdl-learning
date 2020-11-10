@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
 
 -- entity declaration for your testbench.Dont declare any ports here
 ENTITY mealy_lejon_tb IS 
@@ -38,36 +38,35 @@ BEGIN
   stim_proc: process
    begin         
         wait for 2 ns;
-        nrst <='1';
-        wait for 3 ns;
         nrst <='0';
-       wait for 2 ns;    -- Exempel på stimulering
+        wait for 3 ns;
+        nrst <='1';
+       wait for 2 ns;
            g1 <= '0';
            g2 <= '0';
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '1';
            g2 <= '0';
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '1';
            g2 <= '1';
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '0';
            g2 <= '1';
            
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '0';
            g2 <= '0';
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '0';
            g2 <= '1';
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '1';
            g2 <= '1';
-       wait for 2 ns;    -- Exempel på stimulering
+       wait for 2 ns;
            g1 <= '1';
            g2 <= '0';
-          
-wait;
+       wait;
   end process;
 
 END;
