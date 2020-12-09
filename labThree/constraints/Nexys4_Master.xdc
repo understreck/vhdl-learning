@@ -203,8 +203,8 @@ set_property PACKAGE_PIN E3 [get_ports clk]
 #set_property PACKAGE_PIN R10 [get_ports btnR]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnR]
 ##Bank = 14, Pin name = IO_L21P_T3_DQS_14,					Sch name = BTND
-#set_property PACKAGE_PIN V10 [get_ports btnD]						
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnD]
+set_property PACKAGE_PIN V10 [get_ports nrst]						
+	set_property IOSTANDARD LVCMOS33 [get_ports nrst]
  
 
 
@@ -238,17 +238,17 @@ set_property PACKAGE_PIN E17 [get_ports g2]
 
 ##Pmod Header JB
 ##Bank = 15, Pin name = IO_L15N_T2_DQS_ADV_B_15,				Sch name = JB1
-#set_property PACKAGE_PIN G14 [get_ports {JB[0]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JB[0]}]
+set_property PACKAGE_PIN G14 [get_ports {cout[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cout[0]}]
 ##Bank = 14, Pin name = IO_L13P_T2_MRCC_14,					Sch name = JB2
-#set_property PACKAGE_PIN P15 [get_ports {JB[1]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JB[1]}]
-##Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,			Sch name = JB3
-#set_property PACKAGE_PIN V11 [get_ports {JB[2]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JB[2]}]
-##Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,				Sch name = JB4
-#set_property PACKAGE_PIN V15 [get_ports {JB[3]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JB[3]}]
+set_property PACKAGE_PIN P15 [get_ports {cout[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cout[1]}]
+##Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,			Sch name = cout3
+set_property PACKAGE_PIN V11 [get_ports {cout[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cout[2]}]
+##Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,				Sch name = cout4
+set_property PACKAGE_PIN V15 [get_ports {cout[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cout[3]}]
 ##Bank = 15, Pin name = IO_25_15,							Sch name = JB7
 #set_property PACKAGE_PIN K16 [get_ports {JB[4]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {JB[4]}]
