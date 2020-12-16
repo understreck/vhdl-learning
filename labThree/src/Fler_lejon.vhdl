@@ -36,6 +36,8 @@ entity Fler_lejon is
            g2   : in STD_LOGIC;
            clk  : in STD_LOGIC;
            nrst : in STD_LOGIC;
+           led  : out std_logic_vector(1 downto 0);
+           oled  : out std_logic_vector(7 downto 4);
            cout : out STD_LOGIC_VECTOR (3 downto 0)
            );
 end entity;
@@ -66,19 +68,23 @@ signal icout : STD_LOGIC_VECTOR (3 downto 0);
 
 begin 
 
+led(0) <= g2;
+led(1) <= g1;
+
+oled <= icout;
 
 bla: entity work.raknare port map(
     ud => iud,
     cout => icout,
     clk => clk,
-    nrst => nrst
+    nrst => not nrst
 );
 
 bli: entity work.mealy_lejon port map(
     g1 => ig1,
     g2 => ig2,
     clk => clk,
-    nrst => nrst,
+    nrst => not nrst,
     ud => iud
 );
 

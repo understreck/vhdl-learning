@@ -62,10 +62,13 @@ begin
             if state = looping then
                 ud <= dontCare;
             elsif state = middle then
-                ud <=
-                    increment when gate = "01" else
-                    decrement when gate = "10" else
-                    dontCare;
+                if gate = "01" then
+                    ud <= increment;
+                elsif gate = "10" then
+                    ud <= decrement;
+                else                    
+                    ud <= dontCare;
+                end if;                
             end if;
         end if;
 
@@ -77,9 +80,11 @@ begin
         if nrst = '0' then
             nextState <= looping;
         elsif rising_edge(clk) then
-            nextState <=
-                middle when gate = "11" else
-                looping;
+            if gate = "11" then
+                nextState <= middle;
+            else
+                nextState <= looping;
+            end if;
         end if;
 
     end process state_p;
