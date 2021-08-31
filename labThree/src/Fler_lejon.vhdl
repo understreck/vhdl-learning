@@ -43,24 +43,6 @@ entity Fler_lejon is
 end entity;
 
 architecture structural of Fler_lejon is
--- component mealy_legon
---   port(
---             g1   : in STD_LOGIC;
---             g2   : in STD_LOGIC;
---             clk  : in STD_LOGIC;
---             nrst : in STD_LOGIC;
---             ud   : out STD_LOGIC_vector(0 to 1)
---              );
--- end component;
-   
--- component raknare
---   port (
---               ud  : in STD_LOGIC_VECTOR (1 downto 0);  
---              clk  : in STD_LOGIC;
---              nrst : in STD_LOGIC;
---              cout : out STD_LOGIC_VECTOR (3 downto 0)
---   );
--- end component;
    
 signal ig1, ig2 : STD_LOGIC;
 signal iud : STD_LOGIC_VECTOR(1 downto 0);

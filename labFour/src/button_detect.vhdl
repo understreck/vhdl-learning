@@ -42,13 +42,26 @@ constant counter_limit : integer := 100000-1;
 
 begin
 
-scan_logic_Moore: process(present_state)
-        begin 
-		
--- Fyll i kod  för Moore-maskin  labbuppgift 4.1.1
+    scan_logic_Moore: process(present_state)
+    begin 
+        if nrst = '1' then
+            next_state <= s0;
+        end if;
 
-            end case;        
-        end process;
+        if present_state = s0 then
+            col_i <= "0001";
+            next_state <= s1;
+        elsif present_state = s1 then
+            col_i <= "0010";
+            next_state <= s2;
+        elsif present_state = s2 then
+            col_i <= "0100";
+            next_state <= s3;
+        else
+            col_i <= "1000";
+            next_state <= s0;
+        end if;
+    end process;
     
     row_i <= delay1 and delay2 and not delay3;      -- Debouncer och pulsgivare.
 --  row_i <= row;                                   -- Används vid simulering.    
@@ -57,12 +70,26 @@ scan_logic_Moore: process(present_state)
     bit_pattern(7 downto 4) <= col_i; 
     bit_pattern(3 downto 0) <= row_i;
            
-     with bit_pattern select  -- Omvandlar bitmönstret från tangentbordet till binära tal
-         number <= "0000" when "00010001",   -- 0
-		 
-         -- fyii i kod till tabell labbuppgift 4.1.2
-		 
-                   "1111" when others;       
+    with bit_pattern select  number <= -- Omvandlar bitmönstret från tangentbordet till binära tal
+        "0001" when "00010001",   -- 1
+        "0010" when "00100001",   -- 2
+        "0011" when "01000001",   -- 3
+
+        "0100" when "00010010",   -- 4
+        "0101" when "00100010",   -- 5
+        "0110" when "01000010",   -- 6
+
+        "0111" when "00010100",   -- 7
+        "1000" when "00100100",   -- 8
+        "1001" when "01000100",   -- 9
+
+        "0000" when "00101000",   -- 0
+
+        "1010" when "10000001",   -- +
+        "1011" when "10000010",   -- -
+        "1110" when "10000100",   -- Enter
+        "1100" when "10001000",   -- clear
+        "1111" when others;       
  
  
 state_register: process(clk, nrst)      -- dela mer frekvensen till 100 Hz
